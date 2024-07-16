@@ -9,7 +9,7 @@ return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" textAlign={'left'} component="div" sx={{ flexGrow: 1 }}>
             PRODUCTAPP
           </Typography>
           <Button color="inherit"><Link to={"/"} style={{textDecoration:"none",color:"white"}}>HOME</Link></Button>
