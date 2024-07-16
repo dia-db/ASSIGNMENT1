@@ -25,7 +25,7 @@ useEffect(()=>{
         <Grid container spacing={2}>
         {rows.map((item,index)=>(
         <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-        <Card sx={{ minWidth:275 , display: 'flex',flexDirection:'column', height: '100%',marginTop: '20px', marginBottom: '20px'}}>
+        <Card sx={{ minWidth:275 , display: 'flex',flexDirection:'column',justifyContent: 'space-between', height: '100%',marginTop: '20px', marginBottom: '20px'}}>
         <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         {item.title}
@@ -38,8 +38,8 @@ useEffect(()=>{
         </Typography>
         <img src={item.image} style={{ width: '100%', height: 'auto', objectFit: 'contain' }}/>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
+      <CardActions  sx={{ display: 'flex', alignItems: 'flex-end' }}>
+        <Button size="small" sx={{ alignSelf: 'flex-start' }}>Learn More</Button>
       </CardActions>
       </Card>
      </Grid>
